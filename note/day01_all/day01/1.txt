@@ -1,0 +1,42 @@
+练习：
+1. 使用绝对路径表达
+   主目录下Month01中有day03，
+   其中有homework.txt
+  /home/tarena/Month01/day03/homework.txt
+
+2. 使用相对路径表达
+   在当前文本位置，查找上一题目中的homework.txt
+   如何表达
+  ../../Month01/day03/homework.txt
+
+3. 使用cd命令，进入到主目录下的下载文件夹中
+
+cd /home/tarena/下载
+cd ../../下载
+
+4. 删除当前文件夹下所有 doc格式文件
+   然后将所有py程序文件移动到 dir目录下
+
+rm  *.doc
+mv  *.py  dir
+
+5. 查看 Month01/day06/demo01.py
+前8行中是否有 print语句
+
+head -8 /home/tarena/Month01/day06/demo01.py | grep "print"
+
+6. 查看/etc下有多少个文件
+ls /etc | wc -w
+
+
+
+cookie:
+
+指定解压未知 -d 路径
+unzip   -d   /home/tarena   file.zip
+
+
+作业：
+  1. 今天的命令再熟悉一遍
+  2. 利用压缩解压命令将第一阶段内容
+  整理备份

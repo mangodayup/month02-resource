@@ -1,0 +1,60 @@
+前情回顾
+
+1. 外键约束
+
+   外键 ： 依赖于另外一张数据表（主表）的主键
+                自动创建索
+
+   约束 ： 从表关系字段只能有主表主键值
+               主表的内容，如果被关联则限制删除修改
+
+  constraint [名字]
+  foreign  key(外键字段)
+  references  主表(主键)
+  级联动作
+
+  删除 ： alter table [tb] drop  foreign key  [外键名称]
+
+2.  表关系
+
+    一对多     多对多
+
+   E-R
+
+3. 多表关联查询
+
+   select ...
+   from  整合数据，提供给后续操作
+   where ...
+   group by ..
+   having ..
+   order by ...
+   limit ..
+
+   内连接
+   tb1 as t inner join tb2  on tb1.col=tb2.col
+
+   外连接 --》 左连接  右连接
+   tb1 left join tb2  on tb1.col=tb2.col
+   tb1 right join tb2  on tb1.col=tb2.col
+
+4. 视图
+
+   * 提取部分数据形成虚拟表操作
+   * 增强安全性，让数据更简洁
+
+练习01：
+编写一个函数，传入另个学生姓名
+返回这两个学生分数之差
+
+练习02
+编写一个存储过程，传入一个学生的ID
+将该学生的分数改为98分，然后删除
+比这个学生分数还高的所有人
+
+作业： 1. 总结数据库语句
+      2. 学生管理系统
+   
+
+
+

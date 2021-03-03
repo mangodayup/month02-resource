@@ -1,0 +1,63 @@
+前情回顾
+
+1. 数据库概述
+   * 数据库
+   * 数据库管理系统
+   * 数据库的应用场景
+   * 数据库分类： 关系型  非关系型
+   * mysql特点： 开源  关系型  c/c++
+   * mysql 安装和启动
+     sudo service mysql start/stop
+   * 使用终端链接数据库
+     mysql -u root -p
+   * SQL: 通过指令，语句向关系型数据库发起数据操作申请
+
+2. 关系型数据库基本概念
+
+   数据库
+   数据表
+   记录
+   字段
+   数据元素
+
+3. 数据库操作
+
+   create database [db] [charset=utf8];
+   show databases;
+   use [db];
+   select database();
+   drop database [db];
+
+4. 数据表
+
+   数据类型：
+     数字 tinyint  int  float  bit
+     字符串 char  varchar  enum  set
+
+   字段约束
+     primary key   auto_increment
+     not null
+     default xx
+     unsigned
+     comment
+
+   create table [tb] (col type 约束,...);
+   show tables;
+   desc [tb];
+   show create table [tb];
+   drop table [tb];
+
+5. 数据基础操作
+   insert into [tb] (col1,...) values (val1,..)
+
+   select col1,... from [tb] [where...];
+
+   update [tb] set col=val... [where..];
+
+   delete from [tb] [where...]
+
+   where 子句 ： 算数  比较  逻辑
+
+
+作业： 1. 基础语句整理梳理
+      2. 今天练习 再写一下

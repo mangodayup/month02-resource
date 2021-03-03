@@ -1,0 +1,77 @@
+前情回顾
+
+1. alter语句
+
+   alter table [tb]  add/drop/modify/change
+
+2. 时间数据类型
+
+   date  datetime  time
+   now()
+
+3. 高级查询
+
+   模糊查询 ： like  %  _
+   重命名 ： as
+   排序 ： order by [col] desc
+   限制（分页）: limit  n  offset m
+   联合查询 ： union  all
+   子查询 ： ()   from  where
+
+4. 聚合操作
+
+  聚合函数：sum() avg() max() min() count()
+
+  聚合分组： group by
+
+  聚合筛选： having
+
+  去重： distinct
+
+5. 索引
+
+   功能： 提高查询效率
+   使用： 数据量比较大，常用作查询操作的表
+   分类： 普通 唯一 主键
+
+   create table [tb](
+   col type,
+   ...
+   index [index_name](col),
+   unique [index_name](col)
+   );
+
+   create index [index_name] on tb(col);
+
+   desc [tb];--> key
+
+   drop index
+
+
+
+思考：
+需要数据库表存储一些信息
+
+用户名  密码  电话  图片 文字  地点  时间
+点赞  评论信息
+
+* 有些数据虽然关联性很强但是放在一个表中会冗余
+* 拆成多个表存储，建立表关系--> 关系字段
+* 关系字段没约束，可以随意填写不合实际
+* 对关系字段及主表做约束--> 外键约束
+* 一对多和多对多关系的标准建立方式
+
+练习01：根据所学表关系，梳理用户朋友圈表
+存储内容不变，但是要重新设计关系，建立数据表
+
+
+作业： 1. 今天的语句自己熟悉一遍
+
+      2. book表 拆分 为三个表
+         图书  出版社   作家
+
+         分别设计这三张表和表与表之间的
+         关系
+         先画出 E-R图，然后再写出语句
+
+

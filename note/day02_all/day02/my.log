@@ -1,0 +1,7 @@
+系统操作日志记录
+User:tarena
+2021年 01月 28日 星期四 10:22:24 CST
+总用量 12
+-rw-rw-r-- 1 tarena tarena 505 1月  28 09:20 2.txt
+-rwxrwxrwx 1 tarena tarena  21 1月  28 09:43 hello.py
+-rw-r--r-- 1 tarena tarena  80 1月  28 10:22 my.log
